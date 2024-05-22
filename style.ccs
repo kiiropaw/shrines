@@ -3,20 +3,6 @@ html
   background-image: black;
   }
 
-body
-{
-font-family: sans-serif
-font-size:lem;
-line-height: 1.5em;
-background: white;
-max-width: 85%
-margin: 0 auto;
-}
-
-header
-{
-background: #f8d141;
-}
 
 
   
