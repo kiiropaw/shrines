@@ -4,6 +4,15 @@
  <link href="Cardinal.png" rel="shortcut icon" type="image/gif">
 
 <style>
+	
+	<div id="container">
+            <div id="headerArea">
+                
+                
+            </div>
+
+            <div id="flex">
+
 
   body {
  background-image: url("#");
@@ -17,20 +26,26 @@
   text-align: center;
 }
 
+	  /* the "container" is what wraps your entire website */
+            /* if you want something (like the header) to be Wider than
+    the other elements, you will need to move that div outside
+    of the container */
+            .container {
+                max-width: 900px;
+                /* this is the width of your layout! */
+                /* if you change the above value, scroll to the bottom
+      and change the media query according to the comment! */
+                margin: 0 auto;
+                /* this centers the entire page */
+            }
+
 	
 	
 </style>
 </head>
 <body>
 
-	<div id="container">
-            <div id="headerArea">
-                
-                
-            </div>
-
-            <div id="flex">
-
+	
 <div class="header">
   <h1>Header</h1>
 </div>
