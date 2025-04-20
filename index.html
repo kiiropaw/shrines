@@ -3,323 +3,325 @@
 
  <link href="Cardinal.png" rel="shortcut icon" type="image/gif">
 
+<style>
 
-        <div id="container">
-            <div id="headerArea">
-                <div id="header" style="height: 229px; margin-bottom: 0px;"></div>
-                
-            </div>
-
-            <div id="flex">
-                
-                <main>
-                    <h1>Welcome to my Layout Maker!</h1>
-                    <p><strong>Please read this first!</strong></p>
-                    <p>This tool generates a layout that is responsive, which means it looks great on phones! Use dropdowns above to customize your layout's general features. Click the button to generate your HTML and CSS, and paste it into a file on Neocities.</p>
-                    <p>Then you can replace all of the text with your own. For more customization, the CSS code has comments to explain what each part changes. Please read through the code - even if you have no idea what it means.</p>
-                    <p>If you're feeling up for a challenge, I put together <a href="/sadgrl/learn/understanding-tweaking-my-layout-maker/" target="_blank">a guide</a> which goes over the structure of how this layout is built, along with some specific tips on how to edit it in certain ways.</p>
-                    <p>Check the links in the sidebar for more resources to build your own website!</p>
-
-                    <p> - Cat Ipsum - </p>
-                    <p>Rub my belly hiss swipe at owner's legs sniff catnip and act crazy growl at dogs in my sleep sit on the laptop for hiss at vacuum cleaner i like to spend my days sleeping and eating fishes that my human fished for me.</p>
-
-                    <p>Head nudges eat my own ears. Hey! you there, with the hands why can't i catch that stupid red dot, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff, or roll over and sun my belly curl up and sleep on the freshly laundered towels.</p>
+body{
+div {
+  background-color: #1d9b5e;
 
 
-                </main>
-                
-            </div>
-            <footer id="footer" style="margin-top: 0px;">CC0 Public Domain, 2022</footer>
-        </div>
-        <!-- THIS IS THE CSS !-->
-        <style>
-            /* user styles */
+</head>
+</style>
+<body>
+</body>
+</html>
 
-            /* styles are what change the color and sizes of stuff on your site. */
-
-            /* these are variables that are being used in the code
-    these tended to confuse some people, so I only kept 
-    the images as variables */
-
+    <style>
             :root {
-                --header-image: url('https://yumes.sakura.ne.jp/img274.gif');
-                --body-bg-image: url('https://previews.dropbox.com/p/thumb/AClXmsDheeswYdj6R9nB9MS8QePXUlOkn8nWhLTZXw9A-1GsvWBaNLW7qA08TOCS5hRkj4fACMwZxqFJyac-shc4rUa9ODmVSN10rF3fTDIk46kqkI4PpgkdnFytcyJRKIlzLXkuDqC0buU6_MwU1hDHUYajcXPZsl6yXSnRiCnO3ueiGdIb_PJ74TxkXH6jEndGsRjrbs_NVbyORir7CKhnoamMMwbT7eJgoVTZay2dSYf7aFidJaaRPmXIilyqlyNYDprR7p3afPT_S7QusGYkWArUi5-78g87N3bZxWV7he7VciNa-AjOhccnJqesy8P8l8CvM_NyHC0KvulKjaBx/p.jpeg?is_prewarmed=true');
-                 background-repeat: no-repeat;
-                 background-attachment: fixed; 
-                 background-size: 100% 100%;
-		    
-                /* colors */
-                --content: #43256E;
-            }
+                /* These variables exist so you can make quick and simple style changes without much CSS knowledge */
 
-            /* if you have the URL of a font, you can set it below */
-            /* feel free to delete this if it's not your vibe */
-
-            /* this seems like a lot for just one font and I would have to agree 
-    but I wanted to include an example of how to include a custom font.
-    If you download a font file you can upload it onto your Neocities
-    and then link it! Many fonts have separate files for each style
-    (bold, italic, etc. T_T) which is why there are so many!
+                /* applies to all areas */
+                
     
-    */
+                --font-size: 14px;
+                --line-height: 1.3em;
+                --font-color: black;
+                --link-color: #22506A;
+                --link-text-decoration: none;
+		    
+		    border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAAVpJREFUWEfVmcENwjAMRdsdWQKJcZBYgh3hlB4cmfftpMXhSN3m+TV2Etg38fN4vz6/Qp+3+y4+KhUmP3w5UGvOS2C24bDRsqDWWANt3xP4LLNodDnQqDnPeKrkt22TjS4L2sxk52q03aWNlgVtYN4UUKeGV5w2cTuXZaPlQb1MqT/S3KX77bhodDnQbP9T76OFRTaqDpiNGwalKp0FZovVjotGy4LSiuG1qaxZ7z7bNTqj5UHPesVR0x7HYXQ5UHXFiJqitdw+z3J0RsuCUqOlTGeZJUH7cqD2dHlVv1TfyGF0OVDKcHSfmW2DndHyoFTdatGNnqk8UV3V09mItmOngdoMaFOinjbpOK1eb3Hh3VMZUComdf+oHgrV36hwh6+CU9uiuY9LqApCcdQfbSIUb8ebblQ19zdQ2m+qbcvto/RKo9fVPx/UInLbUxSM4qN9+TKjowuIB/oFwFbVqpMiQa0AAAAASUVORK5CYII=) 14 / 14px / 0 round;
+                    border-width: 14px;
+                    border-style: solid;
+  
 
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+                /* main content (between sidebars) */
+                --content-padding: 25px;
+                --content-bg-color: #006400;
+		
+
+                /* header */
+                --header-height: 204px;
+                --header-background: url('#');
+                --header-margin-bottom: 0px;
+		 
+
+                /* sidebar */
+                --sidebar-margin: 10px;
+                --sidebar-width: 150px;
+                --sidebar-padding: 15px;
+                sidebar-bg-color: #006400;
+
+                /* footer */
+                --footer-height: 30px;
+                --footer-bg-color: #006400;
+
+                /* navbar */
+                --navitems-alignment: center;
+                --space-between-navitems: 20px;
+                --navbar-margin-bottom: 10px;
+                --nav-bg-color: #006400;
+
+                /* container */
+                --container-width: 990px;
+                --container-bg-color: #123524;
+
+                /* controls the gap between the content and the footer */
+                --row-gap: 5px;
+
+                /* To add scrollbars to your sidebars, just make the height a px value and change overflow to 'auto' */
+
+                --sidebar-height: 100%;
+                --sidebar-overflow: hidden;
+                background-color: #4e8c60;
             }
 
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
-                font-weight: bold;
-            }
-
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
-                font-style: italic;
-            }
-
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
-                font-style: italic;
-                font-weight: bold;
-            }
-
-
+            html,
             body {
-                font-family: 'Nunito', sans-serif;
                 margin: 0;
-                background-color: #08031A;
-                /* you can delete the line below if you'd prefer to not use an image */
-                background-size: 65px;
-                color: #fceaff;
-                background-image: var(--body-bg-image);
-		background-repeat: no-repeat;
-                background-attachment: fixed; 
-                background-size: 100% 100%;
-		    margin: 1;
-            }
-
-            * {
-                box-sizing: border-box;
-            }
-
-            /* below this line is CSS for the layout */
-
-            /* this is a CSS comment
-    to uncomment a line of CSS, remove the * and the /
-    before and after the text */
-
-
-            /* the "container" is what wraps your entire website */
-            /* if you want something (like the header) to be Wider than
-    the other elements, you will need to move that div outside
-    of the container */
-            #container {
-                max-width: 900px;
-                /* this is the width of your layout! */
-                /* if you change the above value, scroll to the bottom
-      and change the media query according to the comment! */
-                margin: 0 auto;
-                /* this centers the entire page */
-            }
-
-            /* the area below is for all links on your page
-    EXCEPT for the navigation */
-            #container a {
-                color: #ED64F5;
-                font-weight: bold;
-                /* if you want to remove the underline
-      you can add a line below here that says:
-      text-decoration:none; */
-            }
-
-            #header {
-                width: 100%;
-                background-color: #5e4e8c;
-                /* header color here! */
-                height: 150px;
-                /* this is only for a background image! */
-                /* if you want to put images IN the header, 
-      you can add them directly to the <div id="header"></div> element! */
-                background-image: var(--header-image);
-                background-size: 100%;
-            }
-
-            /* navigation section!! */
-            #navbar {
-                height: 40px;
-                background-color: #13092D;
-                /* navbar color */
-                width: 100%;
-            }
-
-            #navbar ul {
-                display: flex;
+	        margin-top: 5px;
                 padding: 0;
-                margin: 0;
-                list-style-type: none;
-                justify-content: space-evenly;
+                background-image: url("https://64.media.tumblr.com/fcf8a1f2224b94edec531a776c9b2c57/3ca2f97d074e59f0-3d/s250x400/1f94409b489afac44f736b342dbc2e8b1429ef37.jpg");
+                font-family: day;
+                font-size: var(--font-size);
+                line-height: var(--line-height);
+                color: var(--font-color);
             }
 
-            #navbar li {
-                padding-top: 10px;
+            body a {
+                color: var(--link-color);
+                font-weight: bold;
+                text-decoration: var(--link-text-decoration);
             }
 
-            /* navigation links*/
-            #navbar li a {
-                color: #ED64F5;
-                /* navbar text color */
-                font-weight: 800;
-                text-decoration: none;
-                /* this removes the underline */
+
+
+#main-container {
+                max-width: var(--container-width);
+                margin: 0 auto;
+                background-color: var(--container-bg-color);
+		    .container img {
+               height: 100%;
+               width: 100%
+	      text-align: center
+   padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px
+
+			    
             }
 
-            /* navigation link when a link is hovered over */
-            #navbar li a:hover {
-                color: #a49cba;
-                text-decoration: underline;
+
             }
 
-            #flex {
+            .flex {
                 display: flex;
+                margin-bottom: var(--row-gap);
             }
 
-            /* this colors BOTH sidebars
-    if you want to style them separately,
-    create styles for #leftSidebar and #rightSidebar */
-            aside {
-                background-color: #241445;
-                width: 200px;
-                padding: 20px;
-                font-size: smaller;
-                /* this makes the sidebar text slightly smaller */
+            .content-wrap {
+                margin-top: var(--content-margin-top);
             }
 
-
-            /* this is the color of the main content area,
-    between the sidebars! */
-            main {
-                background-color: #75856f;
-                flex: 1;
-                padding: 20px;
-                order: 2;
+            #content-container {
+                width: 60%;
+                margin-bottom: var(--row-gap);
+                background-color: #a2e7a2;
             }
 
-            /* what's this "order" stuff about??
-    allow me to explain!
-    if you're using both sidebars, the "order" value
-    tells the CSS the order in which to display them.
-    left sidebar is 1, content is 2, and right sidebar is 3! */
-
-            */ #leftSidebar {
-                order: 1;
+            #left-sidebar {
+                width: var(--sidebar-width);
+                margin-right: var(--sidebar-margin);
+                margin-bottom: var(--row-gap);
+                height: var(--sidebar-height);
+                overflow: var(--sidebar-overflow);
+                background-color: var(--sidebar-bg-color);
             }
 
-            #rightSidebar {
-                order: 3;
+            #right-sidebar {
+                width: var(--sidebar-width);
+                margin-left: var(--sidebar-margin);
+                margin-bottom: var(--row-gap);
+                height: var(--sidebar-height);
+                overflow: var(--sidebar-overflow);
+                background-color: var(--sidebar-bg-color);
             }
 
-            footer {
-                background-color: #13092D;
-                /* background color for footer */
-                width: 100%;
-                height: 40px;
-                padding: 10px;
+            #header-contained {
+                height: var(--header-height);
+                margin-bottom: var(--header-margin-bottom);
+                background-image: var(--header-background);
+                background-position: center center;
+		 background-size: 100%;   
+            }
+
+            #footer {
+                height: var(--footer-height);
                 text-align: center;
-                /* this centers the footer text */
+                color: var(--font-color);
+                background-color: var(--footer-bg-color);
             }
 
-            h1,
-            h2,
-            h3 {
-                color: #ED64F5;
+            #header-full {
+                display: none;
+                height: var(--header-height);
+                margin-bottom: var(--header-margin-bottom);
+                background-image: var(--header-background);
+                background-position: center center;
             }
 
-            h1 {
-                font-size: 25px;
+            #navbar-contained {
+                margin-bottom: var(--row-gap)
             }
 
-            strong {
-                /* this styles bold text */
-                color: #ED64F5;
+            #navbar-full {
+                display: none;
             }
 
-            /* this is just a cool box, it's the darker colored one */
-            .box {
-                background-color: #13092D;
-                border: 1px solid #ED64F5;
-                padding: 10px;
+            .nav {
+                margin-left: 0;
+                text-align: var(--navitems-alignment);
+                margin-top: 0;
+                margin-bottom: var(--navbar-margin-bottom);
+                padding-top: 1em;
+                padding-bottom: 1em;
+                background-color: var(--nav-bg-color);
             }
 
-            /* CSS for extras */
-
-            #topBar {
-                width: 100%;
-                height: 30px;
-                padding: 10px;
-                font-size: smaller;
-                background-color: #13092D;
+            .nav li {
+                display: inline-block;
+                padding-right: var(--space-between-navitems);
             }
 
+            .wrapper {
+                padding: var(--content-padding);
+                padding-top: var(--sidebar-padding);
+            }
 
-            /* BELOW THIS POINT IS MEDIA QUERY */
+            .sidebar-wrapper {
+                padding: var(--sidebar-padding);
+                height: var(--sidebar-height);
+                overflow: var(--sidebar-overflow);
+            }
 
-            /* so you wanna change the width of your page? 
-    by default, the container width is 900px.
-    in order to keep things responsive, take your new height,
-    and then subtrack it by 100. use this new number as the 
-    "max-width" value below
-    */
+            .footer-wrapper {
+                padding: 5px;
+            }
 
+            /* To keep your site RESPONSIVE, make sure this variable matches the width for --container-width UNLESS --container-width is 100% - if it's 100%, you'll need to manually input a breakpoint. */
             @media only screen and (max-width: 800px) {
-                #flex {
+                .flex {
                     flex-wrap: wrap;
                 }
 
-                aside {
+                #left-sidebar {
                     width: 100%;
-                }
-
-                /* the order of the items is adjusted here for responsiveness!
-      since the sidebars would be too small on a mobile device.
-      feel free to play around with the order!
-      */
-                main {
-                    order: 1;
-                }
-
-                #leftSidebar {
+                    display: block;
                     order: 2;
+                    margin-right: 0;
+                    margin-bottom: 10px;
                 }
 
-                #rightSidebar {
+                #right-sidebar {
+                    width: 100%;
+                    display: block;
                     order: 3;
+                    margin-left: 0;
                 }
 
-                #navbar ul {
-                    flex-wrap: wrap;
+                #content-container {
+                    width: 100%;
+                    display: block;
+                    order: 1;
+                    margin-bottom: 10px;
+		    
                 }
+		    
+
             }
         </style>
+        <div id="header-full"></div>
+        <div id="navbar-full">
+            <ul class="nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <div id="main-container">
+            <div id="header-contained"></div>
+            <div id="navbar-contained">
+              <style>
+#poop {
+text-shadow: -1px 0 #DA6C8C, 0 1px #DA6C8C, 1px 0 #DA6C8C, 0 -1px #DA6C8C, 0 0;
+ font-style: bold;
+ font-size:1em;
+ font-weight:bold; 
+ color: #ffffff;
+</style>
 
-    
 
-    
+<div id="poop"> <marquee behavior="scroll" direction="right"> This site is underconstruction! </marquee>
+</div> 
 
-    
+</div>
+            <div id="headerArea">
+                </ul>
+            </div>
+            <div class="content-wrap flex alignment">
+                <div id="left-sidebar">
+                    <div class="sidebar-wrapper">Links <li> <a href="https://cherihezi.github.io/social.html/">Social Links</a></li>
+					   <li> <a href="https://cherihezi.github.io/pets.html/">Pets</a></li>
+			                   <li> <a href="https://cherihezi.github.io/about.html/">Here♪</a></li> 
+			                   <li> <a href="https://cherihezi.github.io/morelinks/">More links</a></li>
 
-    
-
-	    
-                
-			 
-                
+			                 </div>
 
 
+			  	<style> 
+@font-face {
+   font-family: day;
+   src: url(https://dl.dropbox.com/s/yob9nensv1rr0zq/HelloDay.otf);
+}
+
+@font-face {
+   font-family: day;
+   src: url(https://dl.dropbox.com/s/yob9nensv1rr0zq/HelloDay.otf);
+   font-weight: bold;
+}
+
+* {
+   font-family: day;
+}
+</style>
 
 
-    
-		 
+			
+                </div>
+                <div id="content-container">
+                    <div class="wrapper"> <p id="text">This website is currently under construction, will be on Neo soon.</p> </div>
+                </div>
+                <div id="right-sidebar">
+                    <div class="sidebar-wrapper"> <p id="text">Right Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Venenatis tellus in metus vulputate eu scelerisque. Duis
+                        at tellus at urna condimentum mattis pellentesque id. Mauris sit amet massa vitae tortor condimentum lacinia
+                        quis vel. Si.</p>
+						
+						
+                    </div>
+                </div>
+            </div>
+			 <img src="https://www.internetbumperstickers.com/066811/g01/got_chocolate.gif" alt="desc">  <img src="https://www.internetbumperstickers.com/066811/i01/internet_cat.gif" alt="desc">  <img src="https://www.internetbumperstickers.com/066811/t01/tomorrow.gif" alt="desc"> <img src="https://www.internetbumperstickers.com/066811/d01/dwell_obscurity.gif" 
+     width="223" 
+     height="40" />  
+            <div id="footer">
+                <div class="footer-wrapper">2024</div>
+            </div>
+        </div>
+		
+		<head>
+		
