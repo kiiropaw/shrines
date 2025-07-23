@@ -1,23 +1,33 @@
     <!DOCTYPE HTML>
     <head>
+    
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     
     <style type="text/css">
-
-         #container{
+    
+    body{        
+        background-image:url('https://64.media.tumblr.com/9c6669eba2a2baa025a9e87046d2c06f/tumblr_nk03vgtl9l1u289dqo3_250.png');
+        font-family:ms gothic;
+        font-size:18px;
+    }  
+    
+    a{
+        color:blue;
+    }    
+    
+    #container{
         width:650px;
         margin:15px 0 15px 0;
-        border:1px solid blue;
         position:absolute;
         left: 50%;
         transform: translateX(-50%);
-    }    
-
-        #header{
+    }     
+    
+    #header{
         height:175px;
         border:1px solid blue;
-        margin:0 0 10px 0;
+        margin:10px 0 10px 0;
         
     }    
     
@@ -28,18 +38,49 @@
         background-position: 50% 30%; 
         background-image:url('https://64.media.tumblr.com/526124f8a638b719d95a55e527b09be5/0594f8b711bfe6e2-e7/s1280x1920/a640f6e70a90f4a99500f43a068259b899162bec.jpg');
     }    
+        
+    #links{
+        border:1px solid blue;
+        margin:0 0 10px 0;
+        text-align:center;
+        background:white;
+        padding:5px;
+    }      
+    
+    #content{
+        border:1px solid blue;
+        background:white;
+        padding:10px;
+        margin:0 0 10px 0;
+    }    
+  
+     #footer{
+        border:1px solid blue;
+        background:white;
+        text-align:center;
+        padding:5px;
+    } 
+        
     
     {CustomCss}
     </style>
     </head>
     <body>
-
-          <div id="container">
+        <div id="container">
             <div id="header">
                 <div id="header_img">
                 </div>
             </div>
+            <div id="links">
+                <a href="/">Link 1</a> | <a href="/">Link 2</a> | <a href="/">Link 3</a> | <a href="/">Link 4</a> | <a href="/">Link 5</a>
+            </div>
+            <div id="content">
+                The content box!
+            </div>  
+            <div id="footer">
+                <a href="/">About</a> | <a href="/">Contact</a> | <a href="/">Site Map</a>
+            </div>             
         </div>
-    
     </body>
-    </html>
+    </html>            
+            
