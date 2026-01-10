@@ -68,7 +68,6 @@ overflow: hidden;
 margin:225px 0 10px 0;
 position:absolute;
 left: 91%;
-cursor: move;
 transform: translateX(-50%);
 box-shadow: inset 13px 0px 6px -10px rgb(66 66 66 / 56%), inset -13px 0px 6px -10px rgb(66 66 66 / 56%), inset 0px 13px 6px -10px #ffffff, inset 0px -13px 6px -10px rgb(66 66 66 / 38%);
 }
@@ -82,32 +81,6 @@ width: 618px;
 margin: auto;
 margin-bottom: 30px;
 }
-
-	  <script>
-        window.onload = function () {
-            var draggableDiv = document.getElementById("container");
-            var posX = 0,
-                posY = 0;
-            var draggable = false;
-
-            draggableDiv.addEventListener("mousedown", function (event) {
-                draggable = true;
-                posX = event.clientX - draggableDiv.offsetLeft;
-                posY = event.clientY - draggableDiv.offsetTop;
-            });
-
-            window.addEventListener("mousemove", function (event) {
-                if (draggable) {
-                    draggableDiv.style.left = event.clientX - posX + "px";
-                    draggableDiv.style.top = event.clientY - posY + "px";
-                }
-            });
-
-            window.addEventListener("mouseup", function () {
-                draggable = false;
-            });
-        };
-    </script>
 
 </style>
 
@@ -173,4 +146,3 @@ This place will be mainly about things revolving around animals and a lot of ran
 </body>
 
     </html>
-
